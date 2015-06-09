@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+
+<!--  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DO NOT REMOVE THIS CREDIT. EVER!
+          _____                    _____             _____          
+         /\    \                  /\    \           /\    \         
+        /::\    \                /::\____\         /::\    \        
+       /::::\    \              /::::|   |         \:::\    \       
+      /::::::\    \            /:::::|   |          \:::\    \      
+     /:::/\:::\    \          /::::::|   |           \:::\    \     
+    /:::/  \:::\    \        /:::/|::|   |            \:::\    \    
+   /:::/    \:::\    \      /:::/ |::|   |            /::::\    \   
+  /:::/    / \:::\    \    /:::/  |::|   | _____     /::::::\    \  
+ /:::/    /   \:::\    \  /:::/   |::|   |/\    \   /:::/\:::\    \ 
+/:::/____/     \:::\____\/:: /    |::|   /::\____\ /:::/  \:::\____\
+\:::\    \      \::/    /\::/    /|::|  /:::/    //:::/    \::/    /
+ \:::\    \      \/____/  \/____/ |::| /:::/    //:::/    / \/____/ 
+  \:::\    \                      |::|/:::/    //:::/    /          
+   \:::\    \                     |::::::/    //:::/    /           
+    \:::\    \                    |:::::/    / \::/    /            
+     \:::\    \                   |::::/    /   \/____/             
+      \:::\    \                  /:::/    /                        
+       \:::\____\                /:::/    /                         
+        \::/    /                \::/    /                          
+         \/____/                  \/____/                           
+                                                                    
+Hosted @ CoffeeNutsThemes
+
+       TUMBLR THEME BY PIERA :: THEME 02 - Castiel
+       TEMPLATE RELEASED: 28062014
+       
+                       TERMS & CONDITIONS 
+1) PLEASE DO NOT REMOVE ANY CREDITS OR REDISTRIBUTE THE THEME.
+2) NEVER USE THIS THEME AS YOUR BASE CODE OR CONTEXTUALLY RIP CODES FOR ANY USE.
+3) ALL CREDIT LINKS SHOULD POINT BACK TO ::
+   http://coffeestainedbooks.tumblr.com/freebies/cn-themes
+
+
+
+          _____                    _____                    _____          
+         /\    \                  /\    \                  /\    \         
+        /::\    \                /::\    \                /::\    \        
+       /::::\    \              /::::\    \              /::::\    \       
+      /::::::\    \            /::::::\    \            /::::::\    \      
+     /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \     
+    /:::/  \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \    
+   /:::/    \:::\    \       \:::\   \:::\    \      /::::\   \:::\    \   
+  /:::/    / \:::\    \    ___\:::\   \:::\    \    /::::::\   \:::\    \  
+ /:::/    /   \:::\    \  /\   \:::\   \:::\    \  /:::/\:::\   \:::\ ___\ 
+/:::/____/     \:::\____\/::\   \:::\   \:::\____\/:::/__\:::\   \:::|    |
+\:::\    \      \::/    /\:::\   \:::\   \::/    /\:::\   \:::\  /:::|____|
+ \:::\    \      \/____/  \:::\   \:::\   \/____/  \:::\   \:::\/:::/    / 
+  \:::\    \               \:::\   \:::\    \       \:::\   \::::::/    /  
+   \:::\    \               \:::\   \:::\____\       \:::\   \::::/    /   
+    \:::\    \               \:::\  /:::/    /        \:::\  /:::/    /    
+     \:::\    \               \:::\/:::/    /          \:::\/:::/    /     
+      \:::\    \               \::::::/    /            \::::::/    /      
+       \:::\____\               \::::/    /              \::::/    /       
+        \::/    /                \::/    /                \::/____/        
+         \/____/                  \/____/                  ~~              
+                                                                           
+Designer @ CoffeeStainedBooks
+
+DO NOT REMOVE THIS CREDIT. EVER!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+
+<head> 
+      {MobileAppHeaders}
+      <meta charset="utf-8" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <!-- Google Chrome Frame for IE -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta http-equiv="ImageToolbar" content="false" /> 
+      <!-- HTML5 Shiv -->
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      
+      
+      <title>{Title}{block:SearchPage} &bull; Search results for &lsquo;{SearchQuery}&rsquo; | {/block:SearchPage}{block:TagPage} &bull; Posts Tagged &lsquo;{Tag}&rsquo; | {/block:TagPage}{block:PostSummary} &bull; {PostSummary} | {/block:PostSummary}</title> 
+      {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+      
+      <link rel="shortcut icon" href="{image:Favicon}" />
+      <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}" /> 
+      <link rel="alternate" type="application/rss+xml" title="{lang:RSS}" href="{RSS}" />
+      
+      <!-- http://t.co/dKP3o1e -->  
+      <meta name="HandheldFriendly" content="True" />
+      <meta name="MobileOptimized" content="320" />
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      
+      <!-- MISC -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+      <!-- MISC -->
+      
+      <!-- DO NOT REMOVE ANY CODES -->
+      <link rel="stylesheet" type="text/css" media="all" href="http://static.tumblr.com/qvqnij2/9dLmuuylt/c.n.t_css.reset1.css" /> 
+      <link rel="stylesheet" type="text/css" media="all" href="http://static.tumblr.com/qvqnij2/wLFmuuyon/c.n.t_reset_css_v2.css" />
+      <link rel="stylesheet" type="text/css" media="all" href="http://static.tumblr.com/qvqnij2/h3rn7vpam/02.min.css" />
+      <script type="text/javascript" src="http://static.tumblr.com/qvqnij2/oPUmuuyr4/c.n.t_modernizr.custom.28168.js"></script>
+      <!-- DO NOT REMOVE ANY CODES -->
+      
+      <!-- THEME VARIABLES -->
+      <!-- IMAGES -->       
+      <meta name="image:Favicon" content="http://static.tumblr.com/qvqnij2/pPWmuvcjm/dip.png" />  
+      <meta name="image:Blog Banner" content="http://static.tumblr.com/qvqnij2/w2zn7vmp7/banner.png" />
+      <meta name="image:background" content="http://static.tumblr.com/qvqnij2/N1rmv9gay/blue_trees_forests_fog_wallpaper_1280x960_www.wall321.com.jpg" />
+
+      <!-- COLOURS -->
+      <meta name="color:Background" content="#A88B6D" />
+      <meta name="color:Body Text" content="#444444" />
+      <meta name="color:Blog Title" content="#51886B" />
+      <meta name="color:Entry Title" content="#444444" />
+      <meta name="color:Link" content="#EDCE33" />
+      <meta name="color:Link Hover" content="#51886B" />
+      <meta name="color:Blogtop Bar" content="#333333" />
+      <meta name="color:Blogtop Bar Link" content="#A88B6D" />
+      <meta name="color:Blogtop Bar Link Hover" content="#D7C6B4" />
+      <meta name="color:Question Text Colour" content="#FFFFFF" />
+      <meta name="color:Question Box" content="#443628" />
+      <meta name="color:Border colour" content="#683C23" />
+      <!-- MISC -->
+      <meta name="if:Fade Images" content="1" />
+      <meta name="if:Disable Right Click" content="1" />
+      <meta name="if:Show Blog Banner" content="1" />
+      <meta name="if:Scroll To Top" content="1" />
+      <!-- OPTIONS -->
+      <meta name="if:Show Ask Link" content="1" />
+      <meta name="if:Show Archive Link" content="1" />
+      <meta name="if:Show Extra Pages" content="1" />
+      <meta name="if:Show RSS Link" content="1" />
+      <meta name="if:Show Submit Link" content="1" />
+      <meta name="if:Show Random Link" content="1" />
+      <meta name="if:Show Custom Links" content="1" />
+      <!-- TEXT INPUT -->
+      <meta name="text:Blog Title" content="" />
+      <meta name="text:Disqus Shortname" content="" />
+      <!-- 7 CUSTOM LINKS-->
+      <meta name="text:Link 01" content="http://" />
+      <meta name="text:Link 01 Title" content="Link 1" />
+      <meta name="text:Link 02" content="http://" />
+      <meta name="text:Link 02 Title" content="Link 2" />
+      <meta name="text:Link 03" content="http://" />
+      <meta name="text:Link 03 Title" content="Link 3" />
+      <meta name="text:Link 04" content="http://" />
+      <meta name="text:Link 04 Title" content="Link 4" />
+      <meta name="text:Link 05" content="http://" />
+      <meta name="text:Link 05 Title" content="Link 5" />
+      <meta name="text:Link 06" content="http://" />
+      <meta name="text:Link 06 Title" content="Link 6" />
+      <meta name="text:Link 07" content="http://" />
+      <meta name="text:Link 07 Title" content="Link 7" />
+      <!-- SOCIAL NETWORKS -->
+      <meta name="text:Ask FM Username" content="" />    
+      <meta name="text:Instagram Username" content="" />
+      <meta name="text:Twitter Username" content="" />
+      <meta name="text:Facebook Username" content="" /> 
+      <meta name="text:Flickr Username" content="" />  
+      <meta name="text:GooglePlus Username" content="" />  
+      <meta name="text:Goodreads Username" content="" />
+      <meta name="text:Pinterest Username" content="" />  
+      <meta name="text:YouTube Username" content="" />
+      
+      
+      
+      <!-- credits to http://fontawesome.io/ --> 
+      <link id='font-awesome-css' href='//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css?ver=3.8' rel='stylesheet'>
+      <!-- credits to http://fontawesome.io/ -->
+      
+      <!-- GOOGLE WEBFONTS -->
+      <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+      <script>
+       WebFont.load({
+           google: {
+               families: ['Lora:400italic,700italic', 'Montserrat:400,700', 'Roboto:400,500,700', 'Bitter:400,700', 'Great+Vibes::latin']
+           }
+       });
+      </script>
+
+
+
+<style type="text/css">
+/* Body
+------------------------------------------------------------ */
+body {margin: 0 auto; padding: 0 0 0 0; word-wrap: break-word; text-align: justify; font-smooth: always; line-height: 1.4em; color: {color:Body Text}; font-family: 'Bitter', serif; font-size: 12px; background: {color:Background} url('{image:Background}') repeat fixed center;}
+
+/* Hyperlinks
+------------------------------------------------------------ */
+a:link, a:active, a:visited  {color: {color:Link}; text-decoration: none; -webkit-transition: opacity 0.8s linear; -webkit-transition: 0.2s ease-in; -moz-transition: 0.2s ease-in; transition: 0.2s ease-in;}
+a:hover {color: {color:Link Hover}; -webkit-transition: 0.2s ease-out; -moz-transition: 0.2s ease-out; transition: 0.2s ease-out;}
+a:focus, a:active {outline: none !important;outline-offset: -2px;}
+
+/* Fonts
+------------------------------------------------------------ */
+.title, h1 {text-align: center; font-size: 17px; line-height: 26px; font-weight: 500; color: {color:Entry Title}; font-family: 'Montserrat', sans-serif;} .title a, .title a:hover, h1 a, h1 a:hover {color: {color:Entry Title};} .quote {font-style: italic; font-size: 17px; font-family: 'Lora', serif; line-height: 17px; letter-spacing: 1px; text-align: left; margin-top: -10px; margin-bottom: 10px; padding: 20px; line-height: 18px; word-spacing: 2px;} .quoted {padding: 10px; letter-spacing: 1px; text-align: center; line-height: 18px; font-style: normal; font-size: 10px; font-family:'Lora', serif;} .link {margin: 0px; padding: 10px; display: block; font-size: 25px; line-height: 32px; text-align: center; color: {color:Link}; font-style: italic !important; font-family:'Lora', serif; border-left: 7px Double {color:Link};}
+        
+/* Blog Layout
+------------------------------------------------------------ */
+#layout {width: 745px; height: 100%; padding: 20px; background: #fff; margin: 40px auto -10px auto; clear: both !important;}
+
+/* Banner Image / Blog Title
+------------------------------------------------------------ */
+#blog-banner {z-index: 1; width: 740px; height: 300px; max-height: 300px; max-width: 740px; margin: 90px auto 0 auto; display: block; background-position: center; background-attachment: relative; background-repeat: no-repeat; background-image:url("{image:Blog banner}");}  
+
+#blog-title {font-family: 'Great Vibes', cursive; font-size: 80px; color: {color:Blog Title}; text-align: center; margin: 70px auto 70px auto;} .titdiv {width: 70%; height: 1px; margin: 30px auto 120px auto; background: {color:Blog Title}; background: -webkit-gradient(linear, left top, right bottom, from(transparent), color-stop(.5, {color:Blog Title}), to(transparent)); background: -moz-linear-gradient(0deg, transparent, {color:Blog Title}, transparent); z-index: -2;}
+
+
+/* Entry content
+------------------------------------------------------------ */
+#entry-content {float: left; width: 740px; padding: 3px; overflow: hidden; background: #fff;} .entry-box_wrap {width: 720px; padding: 10px; overflow: hidden; background: #fff;} .entry-box {width: 700px; padding: 10px; overflow: hidden; background: #fff; margin-bottom: 80px;} .entry-box img {max-width: 700px;} .entry-box-textpost {max-width: 700px; display: block; text-align: center;}
+
+/* Entry post info
+------------------------------------------------------------ */
+#entry-posted_info {width: 700px; background: #fff; overflow: hidden; margin: 30px auto 20px auto;} .entry-posted_date {z-index: 4; padding: 10px 0 10px 0; width: 700px; float: left; background: #fff; border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; position: absolute; display: block; font-size: 10px; font-weight: 500; line-height: 12px; text-align: center; letter-spacing: 1px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; margin: -12px auto 4px auto; color: #bbbbbb;} .entry-posted_date a {color: #bbbbbb;} .entry-posted_date a hover {color: #545454;}
+
+/* Video
+------------------------------------------------------------ */
+.video embed, .video object,  .video iframe {width: 700px !important; max-height: auto; line-height: 0; display: block; }
+
+/* Conversation
+------------------------------------------------------------ */
+.conversation_post p {margin: 0; padding: 10px 0; line-height: 25px; font-weight: normal; border-bottom: 1px solid #E1E1E1;}
+.conversation_post p:last-child {border-bottom: 0;} .conversation_post p:first-child { border-top: 0; background: none;}
+.label {border-right: 2px Dotted {color:Border colour}; padding-right: 20px; font-size: 13px; font-weight: 900; vertical-align: top; font-weight: bold; font-style: normal !important; text-transform: Small-Caps;}
+.line {padding-left: 5px; font-size: 12px; font-style: italic; font-weight: normal; font-family: Georgia;}
+    
+/* Audio
+------------------------------------------------------------ */
+.audio{display:block; padding: 5px; background: #fff; border: 7px double #e1e1e1;} .cnt_audio_tabs {z-index: 3; width: 550px;} .audio_info {color: #fff; width: 176px; padding: 2px; margin-bottom: 10px; font-size: 8px; text-align: center; position: relative; display: inline-block; font-family: 'Montserrat', sans-serif; background-color: #434334;}
+
+/* Tubmlr Ask
+------------------------------------------------------------ */
+.ask_box {color: {color:Question Text Colour}; font-size: 11px; padding: 20px; background: {color:Question Box}; font-family: 'Montserrat', sans-serif;}
+ 
+/* Misc
+------------------------------------------------------------ */
+::selection {color:#FFF; background:{color:Link};} ::-moz-selection {color:#FFF; background:{color:Link};} p::selection {color:#FFF; background:{color:Link};} p::-moz-selection {color:#FFF; background:{color:Link};} i.fa {font-style: normal !important;} p {padding: 0 0px; line-height: 1.5em; margin: 1.5em 0;} .clear {clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;} small {font-size: 80%;} b, strong  {font-weight: bold;} i, em, italic { font-weight: normal; font-family: Georgia; font-style: italic !important;} ol, ul {padding: 5px 0 0 25px;} ul {list-style-type: Circle;} ol {list-style-type: decimal-leading-zero; padding: 0 0 0 1.6em; } ul ul, ul ol, ol ol, ol ul {padding-bottom: 5px;} blockquote {margin: 0 2.5em; padding: 0px 10px 0px 15px; border-left: 3px Solid {color:Border colour};} blockquote img{ max-width: 550px !important; max-height: auto !important; height: auto !important; margin: 0 0em; padding: 0px; overflow: hidden;} p.read-more a {color: #FFF; font-size: 10px; background: {color:Link}; padding: 6px 14px; letter-spacing: 1px; font-weight: normal; text-decoration: none; text-transform: uppercase; font-family: 'Montserrat', sans-serif; -webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -ms-transition: all 0.5s linear; transition: all 0.5s linear;} p.read-more a:hover {color: #444; background: {color:Link Hover};} #marleyandme {background: {color:Blogtop Bar}; border-bottom: 2px solid {color:Border colour};} #marleyandme ul li a {color: {color:Blogtop Bar Link};} #marleyandme ul li a:hover {color: {color:Blogtop Bar Link Hover};} #marleyandme ul ul {background: {color:Blogtop Bar};} .social_links {width: 700px; display: block; font-size: 14px !important; padding: 0 10px 0 10px; margin: 10px 0 10px 0; color: #DBDBDB;} .social_links a {color: #bbbbbb !important; padding: 2px 5px;} .social_links a:hover {color: #545454 !important;} #cat-list {cursor: pointer;}
+
+
+/* Custom CSS
+------------------------------------------------------------ */
+{CustomCSS}
+
+</style>
+
+</head>
+
+
+<body {block:IfDisableRightClick} onselectstart="return false;" ondragstart="return false;" oncontextmenu="return false;"{/block:IfDisableRightClick}> 
+
+{block:IfShowBlogBanner}
+<header role="banner">
+  <center><a href="/"><div id="blog-banner"></div></a></center>
+</header>
+{/block:IfShowBlogBanner}
+
+
+<div id="marleyandme" role="navigation">
+    <ul>
+    <li><a href="/">Home</a></li>   
+ 
+    {block:IfShowAskLink}
+    <li><a href="/ask">Ask</a></li>
+    {/block:IfShowAskLink}
+ 
+    {block:IfShowSubmitLink}
+    <li><a href="/submit">Submit</a></li>
+    {/block:IfShowSubmitLink}
+   
+    {block:IfShowCustomLinks}
+        <li class="cat-menu"><a id="cat-list">Categories</a>
+           <ul>
+             {block:IfLink01Title}
+             <li><a href="{text:Link 01}">{text:Link 01 Title}</a></li>
+             {/block:IfLink01Title}
+                
+             {block:IfLink02Title}
+             <li><a href="{text:Link 02}">{text:Link 02 Title}</a></li>
+             {/block:IfLink02Title}
+                
+             {block:IfLink03Title}
+             <li><a href="{text:Link 03}">{text:Link 03 Title}</a></li>
+             {/block:IfLink03Title}
+
+             {block:IfLink04Title}
+             <li><a href="{text:Link 04}">{text:Link 04 Title}</a></li>
+             {/block:IfLink04Title}
+
+             {block:IfLink05Title}
+             <li><a href="{text:Link 05}">{text:Link 05 Title}</a></li>
+             {/block:IfLink05Title}
+      
+             {block:IfLink06Title}
+             <li><a href="{text:Link 06}">{text:Link 06 Title}</a></li>
+             {/block:IfLink06Title}
+             
+             {block:IfLink07Title}
+             <li><a href="{text:Link 06}">{text:Link 07 Title}</a></li>
+             {/block:IfLink07Title}
+                        		
+            </ul>
+        </li>
+    {/block:IfShowCustomLinks}        
+        
+    {block:IfShowRSSLink}
+    <li><a href="{RSS}">RSS</a></li>
+    {/block:IfShowRSSLink}
+ 
+    {block:IfShowRandomLink}
+    <li><a href="/random">Shuffle</a></li>
+    {/block:IfShowRandomLink}
+   
+    {block:IfShowExtraPages}
+    {block:HasPages}{block:Pages}
+    <li><a href="{URL}" title="{Label}">{Label}</a></li>
+    {/block:Pages}{block:HasPages}
+    {/block:IfShowExtraPages}
+ 
+    {block:IfShowArchiveLink}
+    <li><a href="/archive">Archive</a></li>
+    {/block:IfShowArchiveLink}
+                		
+        <li><a href="http://coffeestainedbooks.tumblr.com/freebies/cn-themes" target="_blank">Theme</a></li>
+    </ul>
+</div>
+    
+    
+
+<div id="layout" role="main" class="clearfix" style="clear: both">
+
+{block:IfBlogTitle}
+<div id="blog-title">{text:Blog Title}</div>
+<div class="titdiv"></div>
+{/block:IfBlogTitle}
+
+<div id="entry-content" class="clearfix" data-page-id="{CurrentPage}">
+   {block:TagPage}
+   <!--START OF TAG PAGE TITLE-->
+      <div class="entry-box_wrap"><div class="entry-box">
+      <span class="title">TAG RESULTS</span><BR>
+      {lang:TagResultCount Posts tagged Tag 3}.
+      </div></div>
+   <!--END OF TAG PAGE TITLE-->
+   {/block:TagPage}
+    
+   {block:SearchPage}
+   <!--START OF SEARCH-->
+      <div class="entry-box_wrap"><div class="entry-box">
+      {block:SearchResults}
+      <span class="title">SEARCH RESULTS</span><BR>
+      {lang:Your search for SearchQuery returned SearchResultCount results}.
+      {/block:SearchResults}
+      {block:NoSearchResults}
+      <span class="title">SORRY, NO SEARCH RESULTS FOUND</span>
+      {/block:NoSearchResults}
+      </div></div>
+   <!--END OF SEARCH-->
+   {/block:SearchPage}
+
+   {block:Posts}
+   <article id="post-{postID}" class="entry-{block:Text}type-text, {/block:Text}{block:Photo}type-photo, {/block:Photo}{block:Panorama}type-Panorama, {/block:Panorama}{block:Photoset}type-photoset, {/block:Photoset}{block:Quote}type-quote, {/block:Quote}{block:Link}type-link, {/block:Link}{block:Chat}type-chat, {/block:Chat}{block:Video}type-video, {/block:Video}{block:Audio}type-audio, {/block:Audio}{block:Answer}type-answer, {/block:Answer}{block:Tags}tag:{URLSafeTag}, {/block:Tags}"><div class="entry-box_wrap">
+   <div class="entry-box">
+
+   {block:Text}<!-- TEXT POST -->
+    <article class="entry-text" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+       {block:Title}
+        <div class="title"><a href="{Permalink}">{Title}</a></div>
+       {/block:Title}{Body} 
+       {block:More}
+       <p class="read-more"><a href="{Permalink}" target="_blank">{lang:Read more}</a></p>
+       {/block:More}  
+      </article>
+   {/block:Text} 
+
+   {block:Photo}<!-- PHOTO POST -->
+    <article class="entry-photo" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+       {LinkOpenTag}
+       <center><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/></center>
+       {LinkCloseTag}
+       {block:Caption}{Caption}{/block:Caption}   
+       {block:More}
+       <p class="read-more"><a href="{Permalink}" target="_blank">{lang:Read more}</a></p>
+       {/block:More} 
+      </article>
+   {/block:Photo}
+
+   {block:Panorama}<!-- PANORAMA POST -->
+    <article class="entry-panorama" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+       {LinkOpenTag}
+       <center><img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/></center>
+       {LinkCloseTag}
+       {block:Caption}{Caption}{/block:Caption}   
+       {block:More}
+       <p class="read-more"><a href="{Permalink}" target="_blank">{lang:Read more}</a></p>
+       {/block:More} 
+        <div style="padding: 2px; text-align:left;">
+          <i>Panorama image details:-</i> 
+          <u>width {PhotoWidth-Panorama}</u>
+          <i>x</i> <u>height {PhotoHeight-Panorama}</u>
+        </div>
+      </article>
+   {/block:Panorama}
+   
+   {block:Photoset}<!-- PHOTOSET POST -->
+    <article class="entry-photoset" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+       <center>{Photoset-700}</center>
+       {block:Caption}{Caption}{/block:Caption}   
+       {block:More}
+       <p class="read-more"><a href="{Permalink}" target="_blank">{lang:Read more}</a></p>
+       {/block:More} 
+      </article>
+   {/block:Photoset}
+
+   {block:Quote}<!--QUOTE POST-->
+    <article class="entry-quote" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+      {block:Source}
+        <div class="quoted">Quoted by -{Source}</div>
+      {/block:Source}
+        <div class="quote">{Quote}</div>
+      </article>
+   {/block:Quote}
+
+   {block:Link}<!-- LINK POST -->
+    <article class="entry-link" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+      <div class="link"><a href="{URL}" {Target}>{Name} &nbsp; &rarr;</a></div>
+        {block:Description}<p>{Description}</p>{/block:Description}
+      </article>
+   {/block:Link}
+
+   {block:Conversation}<!-- CONVERSATION POST -->
+    <article class="entry-conversation" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+     {block:Title}
+       <div class="title"><a href="{Permalink}">{Title}</a></div>
+     {/block:Title}
+       <div class="conversation_post">
+        {block:Lines}
+          <p class="{Alt}">
+             {block:Label}
+             <span class="label line{UserNumber}">{Label}</span>{/block:Label}
+             <span class="line">{Line}</span>
+         </p>{/block:Lines}
+       </div>
+      </article>
+   {/block:Conversation}
+
+   {block:Audio}<!-- AUDIO POST -->
+    <article class="entry-audio" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}"> 
+       <center><div class="audio">{AudioPlayerWhite}</div></center><br />
+       <center>
+       <div class="cnt_audio_tabs">
+       {block:TrackName}
+         <div class="audio_info"><b>Track name:</b> {TrackName}</div>
+       {/block:TrackName}
+       {block:Artist}
+         <div class="audio_info"><b>Artist:</b> {Artist}</div>
+       {/block:Artist}
+       {block:Album}
+         <div class="audio_info"><b>Album:</b> {Album}</div>
+       {/block:Album}
+        </div></center>
+                  <br />
+       {block:Caption}{Caption}{/block:Caption}   
+       {block:More}
+        <p class="read-more"><a href="{Permalink}" target="_blank">{lang:Read more}</a></p>
+       {/block:More} 
+      </article>
+   {/block:Audio}
+
+   {block:Video}<!-- VIDEO POST -->
+    <article class="entry-video" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+     <center><div class="video">{Video-700}</div></center>
+        {block:Caption}{Caption}{/block:Caption}   
+        {block:More}
+         <p class="read-more"><a href="{Permalink}" target="_blank">{lang:Read more}</a></p>
+        {/block:More} 
+       </article>
+    {/block:Video}
+
+    {block:Answer}<!-- TUMBLR ASK POST -->
+     <article class="entry-answer" id="post_{PostID}" data-postID="{PostID}" data-permalink="{Permalink}">
+      <div class="ask_box">{Asker}: <b>{Question}</b></div>
+       <br><div class="answer_box">{Answer}</div><BR>
+        {block:More}
+         <p class="read-more"><a href="{Permalink}" target="_blank">{lang:Read more}</a></p>
+        {/block:More} 
+       </article>
+    {/block:Answer} 
+
+    {block:IndexPage}
+      {block:Date}
+        <div id="entry-posted_info"><div class="entry-posted_date"> 
+          <a href="{Permalink}" target="_blank">
+                
+    {ShortMonth} {DayOfMonth}{DayOfMonthSuffix} {ShortYear}</a> &nbsp;/&nbsp; <a target="_blank" href="{Permalink}#notes">{NoteCountWithLabel}</a> 
+              
+              
+              {block:ifDisqusShortname}&nbsp;/&nbsp; <a target="_blank" class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments</a>
+              <div class="clear"></div>
+              {/block:ifDisqusShortname}
+        </div></div>
+       {/block:Date}
+    {/block:IndexPage}
+
+</div>
+
+
+{block:PermalinkPagination}  
+  <div class="permalink_details">
+    {block:Date}
+      Posted on: {DayOfWeek}, {DayOfMonthWithZero} {Month} {Year} 
+     {/block:Date}
+     {block:NoteCount} 
+       || with {NoteCountWithLabel}
+     {/block:NoteCount}<BR>
+     {block:HasTags}
+       Tags: {block:Tags}<a href="{TagURL}" target="_blank">{Tag}</a>,
+       {/block:Tags}<BR>
+     {/block:HasTags}
+     {block:RebloggedFrom}
+       Reblogged from: <a href="{ReblogParentURL}" target="_blank">{ReblogParentName}</a> &nbsp;
+        Originally posted by: <a href="{ReblogRootURL}" target="_blank">{ReblogRootName}</a>
+    {/block:RebloggedFrom}
+  </div>
+{/block:PermalinkPagination}
+    
+        
+       </div>
+   </article>
+ {/block:Posts}
+
+{block:PermalinkPagination}
+    <div class="perma_pagination-box_wrap">
+    <div class="perma_pagination-box">
+<center><div class="pint">
+    {block:PreviousPost}
+       <div style="float: left;"> 
+       <a class="permapint" href="{PreviousPost}">&#171; View previous post</a>
+       </div>
+    {/block:PreviousPost}
+    {block:NextPost}
+      <div style="float: right;">
+       <a class="permapint" href="{NextPost}">View next post &#187;</a>
+       </div>
+    {/block:NextPost}
+</div></center>
+     </div></div>
+{/block:PermalinkPagination}
+
+{block:PermalinkPagination}
+<!-- DISQUS -->
+{block:ifDisqusShortname}
+<div class="entry-box_wrap">
+  <div class="entry-box">
+  <a name="disqus_thread"></a>
+<script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>{block:Permalink}
+<div class="title">COMMENTS</div><br>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /**
+     * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread]
+     */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://{text:Disqus Shortname}.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript={text:Disqus Shortname}">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink" style="display: block; text-align: center;">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+{/block:Permalink}<script type="text/javascript">
+var disqus_shortname = '{text:Disqus Shortname}';
+(function () {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'http://disqus.com/forums/{text:Disqus Shortname}/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+</div></div>
+{/block:ifDisqusShortname}
+<!-- END OF DISQUS -->
+{/block:PermalinkPagination}
+
+{block:PostNotes}
+<div class="entry-box_wrap">
+  <div class="entry-box">
+  <a name="notes"></a>
+   <div class="title">POST NOTES</div>
+    <div class="postnotes_box">
+        <article class="notebox">
+          {PostNotes}
+        </article>
+    </div>
+           {block:ContentSource}
+            <div class="permalink-resource">
+            <br>Content Source:<a href="{SourceURL}">{SourceLink}</a></div>
+           {/block:ContentSource}
+    </div></div>
+{/block:PostNotes}
+
+
+</div><!-- END OF ENTRY CONTENT -->
+
+
+<br style="clear:both;" class="clearfix">
+<br class="clear" />
+
+<div id="footer">
+    <footer id="bottom" role="contentinfo" class="content clearfix">
+    {block:Pagination}
+    <div class="pagination-box_wrap">
+    <div class="pagination-box"><center><div class="pint">
+    {block:PreviousPage}
+       <div style="float: left;"> 
+       <a class="pintpag" href="{PreviousPage}"><i class="fa fa-long-arrow-left"></i> Newer </a>
+       </div>
+    {/block:PreviousPage}
+
+    
+    {block:NextPage}
+       <div style="float: right;">
+        <a class="pintpag" href="{NextPage}">Older <i class="fa fa-long-arrow-right"></i> </a>
+       </div>
+    {/block:NextPage}
+</div></center></div></div>
+{/block:Pagination}
+
+
+
+<center>
+<div class="social_links">
+ 
+{block:IfAskFMUsername}
+<a target="_blank" href="http://www.ask.fm/{text:Ask FM Username}"><i class="fa fa-question-circle"></i></a>
+{/block:IfAskFMUsername}
+ 
+{block:IfInstagramUsername}
+<a target="_blank" href="http://www.instagram.com/{text:Instagram Username}"><i class="fa fa-Instagram"></i></a>
+{/block:IfInstagramUsername}
+ 
+{block:IfTwitterUsername}
+<a target="_blank" href="https://www.twitter.com/{text:Twitter Username}"><i class="fa fa-twitter"></i></a>
+{/block:IfTwitterUsername}
+ 
+{block:IfFacebookUsername}
+<a target="_blank" href="http://www.facebook.com/{text:Facebook Username}"><i class="fa fa-facebook-square"></i></a>
+{/block:IfFacebookUsername}
+ 
+{block:IfFlickrUsername}
+<a target="_blank" href="http://www.flickr.com/photos/{text:Flickr Username}"><i class="fa fa-flickr"></i></a>
+{/block:IfFlickrUsername}
+ 
+{block:IfGooglePlusUsername}
+<a target="_blank" href="https://plus.google.com/{text:GooglePlus Username}/about"><i class="fa fa-google-plus"></i></a>
+{/block:IfGooglePlusUsername}
+ 
+{block:IfGoodreadsUsername}
+<a target="_blank" href="http://www.goodreads.com/{text:Goodreads Username}"><i class="fa fa-book"></i></a>
+{/block:IfGoodreadsUsername}
+ 
+{block:IfPinterestUsername}
+<a target="_blank" href="http://www.pinterest.com/{text:Pinterest Username}"><i class="fa fa-pinterest"></i></a>
+{/block:IfPinterestUsername}
+
+{block:IfYoutubeUsername}
+<a target="_blank" href="http://www.youtube.com/user/{text:Youtube Username}"><i class="fa fa-youtube-square"></i></a>
+{/block:IfYoutubeUsername}
+</div>
+</center>
+      
+      <!-- DO NOT REMOVE ANY FORM OF CSB - CREDITS -->
+<div id="bottom-credits">Tumblr Template <a target="_blank" href="http://coffeestainedbooks.tumblr.com/freebies/cn-themes" target="blank">CASTIEL</a> <br /> designed by <a target="_blank" href="http://coffeestainedbooks.tumblr.com">Piera</a> &bull; {lang:Powered by Tumblr 2}</div>
+      <!-- DO NOT REMOVE ANY FORM OF CSB - CREDITS -->
+    </footer>
+</div>
+
+   
+      </div><!-- END OF LAYOUT -->
+      
+       {block:IfDisableRightClick}
+       <!-- DISABLE RIGHT CLICK OPTION UPLOADED BY CNT -->
+       <script type="text/javascript" src="http://static.tumblr.com/qvqnij2/QxNmuyx0v/coffeenutsthemes-dot-tumblr-dot-com.js"></script>
+       {/block:IfDisableRightClick}
+       {block:IfFadeImages}
+      <link rel="stylesheet" type="text/css" media="all" href="http://static.tumblr.com/qvqnij2/vznn7vghr/fadeimgs.css" /> 
+       {/block:IfFadeImages}
+       {block:IfScrollToTop}
+       <!-- SCROLL TO TOP UPLOADED BY CNT -->
+       <script type="text/javascript" src="http://static.tumblr.com/qvqnij2/ivVmvb4wn/to_top_v2.js"></script>
+       {/block:IfScrollToTop}
+        
+
+     <!-- TUMBLR TEMPLATE BY COFFEENUTSTHEMES || POWERED BY TUMBLR || DO NOT REMOVE ANY CREDITS -->
+   </body>
+</html>
