@@ -20,6 +20,7 @@ $(function () {
         bufferPx : 11600,
         extraScrollPx: 12000,
         debug : false,
+        errorCallback: function(){jQuery('.ends').fadeOut(10);},
     },
     
 function(newElements) {
