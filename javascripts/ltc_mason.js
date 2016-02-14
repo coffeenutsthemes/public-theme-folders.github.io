@@ -13,13 +13,14 @@ $(function () {
         nextSelector : 'div#pagination a#nextPage',  
         itemSelector : '.entries',
         loading: {
-            finishedMsg: ' End of blog...',
+            finishedMsg: 'You have reached the end of blog.',
             img: 'http://static.tumblr.com/qvqnij2/wlkmvr6f1/ajax-loader.gif'
     },
             
         bufferPx : 11600,
         extraScrollPx: 12000,
         debug : false,
+        speed:'fast',
         errorCallback: function() {
             $('a.ends').delay(10).fadeOut(100);
         },
