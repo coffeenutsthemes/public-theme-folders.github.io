@@ -49,12 +49,3 @@ $container.imagesLoaded( function() {
     
   });
   
-  
-// Tutorial found at http://anarchei.me/post/24223347981/how-to-make-a-custom-404-page
-$(init);
-function init() {
-var pageTitle = $('.title').text();
-if (pageTitle == "Not Found"){
-    $('.entries > .title').replaceWith( "<center><div class='title'>404</div></center>" );
-    $('.entries > p').replaceWith( "<center><p>Sorry, the content you're looking for could not be traced.</p><p style='font-size:8px!important;'><a href='/'>Return back to homepage</a></p></center>" );
-}}
