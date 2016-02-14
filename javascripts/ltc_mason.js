@@ -21,7 +21,7 @@ $(function () {
         extraScrollPx: 12000,
         debug : false,
         errorCallback: function() {
-            jQuery('a.ends').delay(10).fadeOut(100);
+            $('a.ends').delay(10).fadeOut(100);
         },
 
     },
