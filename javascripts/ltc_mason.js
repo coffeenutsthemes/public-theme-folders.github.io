@@ -20,14 +20,18 @@ $(function () {
         bufferPx : 11600,
         extraScrollPx: 12000,
         debug : false,
-        errorCallback: function(){jQuery('.ends').fadeOut(10);},
+        errorCallback: function() {
+            jQuery('a.ends').delay(10).fadeOut(100);
+        },
+
     },
     
+    
 function(newElements) {
-    var $newElems = $( newElements ).css({ opacity: 0 });
+    var $newElems = $(newElements).css({opacity: 0});
     $newElems.imagesLoaded(function(){
-    $newElems.animate({ opacity: 1 });
-    $container.masonry( 'appended', $newElems, true ); 
+    $newElems.animate({opacity: 1});
+    $container.masonry('appended', $newElems, true); 
     });
   });
   $(window).unbind('.infscr');
