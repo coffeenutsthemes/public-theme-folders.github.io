@@ -5,13 +5,13 @@
 */
 
 $(function () {
-    var $container = $('#entryposts');
-    $container.masonry({itemSelector: '.entries'}),
+    var $container = $('#content');
+    $container.masonry({itemSelector: '.posts'}),
     
     $container.infinitescroll({
         navSelector : 'div#pagination', 
         nextSelector : 'div#pagination a#nextPage',  
-        itemSelector : '.entries',
+        itemSelector : '.posts',
         loading: {
             finishedMsg: 'You have reached the end of blog.',
             img: 'http://static.tumblr.com/qvqnij2/wlkmvr6f1/ajax-loader.gif'
@@ -43,12 +43,12 @@ function(newElements) {
 });
 
 $(function() {
-var $container = $('#entryposts');
+var $container = $('#content');
 $container.imagesLoaded( function() {
      $container.masonry();
     });
 
-    $('#entryposts').masonry({
+    $('#content').masonry({
       isAnimated: true,
       isAnimated: !Modernizr.csstransitions
     });
