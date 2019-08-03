@@ -3,8 +3,8 @@ $(init);
 function init() {
 var pageTitle = $('.title').text();
 if (pageTitle == "Not Found"){
-    $('.entries > .title').replaceWith( "<center><div class='title'>404</div></center>" );
-    $('.entries > p').replaceWith( "<center><p>Sorry, the content you're looking for could not be traced.</p><p style='font-size:8px!important;'><a href='/'>Return back to homepage</a></p></center>" );
+    $('.posts > .title').replaceWith( "<center><div class='title'>404</div></center>" );
+    $('.posts > p').replaceWith( "<center><p>Sorry, the content you're looking for could not be traced.</p><p style='font-size:8px!important;'><a href='/'>Return back to homepage</a></p></center>" );
 }}
 
 $(function($) {var allAccordions = $('.accordion div.data');var allAccordionItems = $('.accordion .accordion-item');$('.accordion > .accordion-item').click(function() {if($(this).hasClass('open')){$(this).removeClass('open');$(this).next().slideUp('500');}else{allAccordions.slideUp('500');allAccordionItems.removeClass('open');$(this).addClass('open');$(this).next().slideDown('500');return false;}});});
