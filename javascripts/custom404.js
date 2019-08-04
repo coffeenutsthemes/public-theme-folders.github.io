@@ -3,7 +3,7 @@ $(init);
 function init() {
 var pageTitle = $('.title').text();
 if (pageTitle == "Not Found"){
-    $('.posts > .title').replaceWith( "<center><div class='title'>404</div></center>" );
+    $('.posts > .title').replaceWith( "<div class='title'>404</div>" );
     $('.posts > p').replaceWith( "<p align='center'>Sorry, the content you are looking for could not be traced.</p><p align='center' style='font-size:8px!important;'><a href='/'>Return back to homepage</a></p>" );
 }}
 
