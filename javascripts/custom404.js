@@ -1,7 +1,7 @@
 // Tutorial found at http://anarchei.me/post/24223347981/how-to-make-a-custom-404-page
 $(init);
 function init() {
-var pageTitle = $('.post text').text();
+var pageTitle = $('.posts').text();
 if (pageTitle == "Not Found"){
     $('.posts > .title').replaceWith( "<div class='title'>404</div>" );
     $('.posts > p').replaceWith( "<p align='center'>Sorry, the content you are looking for could not be traced.</p><p align='center' style='font-size:8px!important;'><a href='/'>Return back to homepage</a></p>" );
