@@ -1,4 +1,4 @@
-;(function($) {
+(function($) {
 //https://www.py4u.net/discuss/285954
 var $container = $('#content');
 
