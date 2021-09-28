@@ -9,14 +9,9 @@ if (pageTitle == "Not Found"){
     $('.post > .text-body p').replaceWith( "<p align='center'>Sorry, the content you are looking for could not be traced.</p><p align='center' style='font-size:8px!important;'><a href='/'>Return back to homepage</a></p>" );
 }};
      
-$(function($) {var allAccordions = $('.accordion div.data');var allAccordionItems = $('.accordion .accordion-item');$('.accordion > .accordion-item').click(function() {if($(this).hasClass('open')){$(this).removeClass('open');$(this).next().slideUp('500');}else{allAccordions.slideUp('500');allAccordionItems.removeClass('open');$(this).addClass('open');$(this).next().slideDown('500');return false;}});
+$(function($) {var allAccordions = $('.accordion div.data');var allAccordionItems = $('.accordion .accordion-item');$('.accordion > .accordion-item').click(function() {if($(this).hasClass('open')){$(this).removeClass('open');$(this).next().slideUp('500');}else{allAccordions.slideUp('500');allAccordionItems.removeClass('open');$(this).addClass('open');$(this).next().slideDown('500');return false;}});   
 
-$.localScroll();
-    
-$("a[title]").style_my_tooltips({tip_follows_cursor:true,tip_delay_time: 90,tip_fade_speed: 700,attribute:"title"});    
-
-// V1
-// tumblr redirects @ magnusthemes.tumblr
+// V1 - tumblr redirects @ magnusthemes.tumblr
   $('a[href*="t.umblr.com/redirect"]').each(function(){
       var originalURL = $(this).attr("href").split("?z=")[1].split("&t=")[0];
       var replaceURL = decodeURIComponent(originalURL);
@@ -24,8 +19,7 @@ $("a[title]").style_my_tooltips({tip_follows_cursor:true,tip_delay_time: 90,tip_
   });
   
 
-// V2
-// REMOVE REDIRECTS V2.0 @ magnusthemes.tumblr
+// V2 - REMOVE REDIRECTS V2.0 @ magnusthemes.tumblr
 function noHrefLi(){
     var linkSet = document.querySelectorAll('a[href*="href.li/?"]');
     Array.prototype.forEach.call(linkSet,function(el,i){
@@ -34,5 +28,4 @@ function noHrefLi(){
     });
 }
 noHrefLi();
-
 });  
