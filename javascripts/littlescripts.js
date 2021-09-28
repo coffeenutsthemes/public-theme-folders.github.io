@@ -1,5 +1,7 @@
+// uploaded by CNT - CNB - Piera for LittleTreasureChest (2021)
+
 (function($) {
-//https://www.py4u.net/discuss/285954
+    
 var $container = $('#content');
 
     $container.masonry({
@@ -11,23 +13,21 @@ var $container = $('#content');
         hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
         isAnimated: !Modernizr.csstransitions
     });
-    
+ 
 var msnry = $container.data('masonry');
 
-
     $container.infiniteScroll({
-          path:"#infinite_pagination a#nextPage",
-          button:"a.ends",
-          scrollThreshold:false,
-          status: '.page-load-status',
+          path:"a#nextPage",
           append: '.posts',
+          button:"a.ends",
+          status: '.page-load-status',
           outlayer: msnry,
           debug: true,
           prefill: true,
+          scrollThreshold:false
     });
-    
-$('.page-load-status').hide();
 
+$('.page-load-status').hide();
 
 var $grid = $('.posts');
     $grid.hide(); 
@@ -51,6 +51,4 @@ $(window).resize(function(){
     $container.masonry();
 });
 
-})(jQuery); 
-
-
+})(jQuery);
